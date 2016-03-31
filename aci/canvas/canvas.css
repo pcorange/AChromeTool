@@ -1,0 +1,14 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+#canvas{
+	width: 100%;
+	background-color: #FF9224;
+
+}
+
+#logo{
+	opacity: 0;
+}
