@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+<<<<<<< HEAD
+<<<<<<< HEAD
+            -->
+=======
+        -->
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+        -->
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <title>JZApp</title>
+=======
+    <title>My App</title>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+    <title>My App</title>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <div class="panel panel-left panel-cover">
+        <div class="list-block">
+            <div class="list-group">
+                <ul>
+                    <li class="list-panel-home">
+                        <a class="item-content close-panel" href="about.html">
+                          <div class="item">
+                            <i class="icon icon-bars theme-white"></i>
+                            <div class="item-title">HOME</div>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="list-panel-schedule">
+                        <a class="item-content close-panel" href="schedule.html">
+                          <div class="item">
+                            <i class="icon icon-bars theme-white"></i>
+                            <div class="item-title">课表</div>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="list-panel-balance">
+                        <a class="item-content close-panel" href="#">
+                          <div class="item">
+                            <i class="icon icon-bars theme-white"></i>
+                            <div class="item-title">余额</div>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="list-panel-elecharge">
+                        <a class="item-content close-panel" href="#">
+                          <div class="item">
+                            <i class="icon icon-bars theme-white"></i>
+                            <div class="item-title">电费</div>
+                          </div>
+                        </a>
+                    </li>
+                    <li class="list-panel-zhuhaibus">
+                        <a class="item-content close-panel" href="#">
+                          <div class="item">
+                            <i class="icon icon-bars theme-white"></i>
+                            <div class="item-title">珠海公交</div>
+                          </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+=======
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+<<<<<<< HEAD
+<<<<<<< HEAD
+            <div class="navbar theme-white">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">JZApp</div>
+=======
+=======
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Awesome App</div>
+<<<<<<< HEAD
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <div class="page-content pull-to-refresh-content">
+                        <div class="pull-to-refresh-layer">
+                          <div class="preloader"></div>
+                          <div class="pull-to-refresh-arrow"></div>
+                        </div>
+=======
+                    <div class="page-content">
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+                    <div class="page-content">
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+                        <div class="content-block">
+                            <p>Page content goes here</p>
+                            <!-- Link to another page -->
+                            <a href="about.html">About app</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-inner">
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <!-- Toolbar  -->
+                    <p>Powered By JNU Alliance</p>
+=======
+                    <!-- Toolbar links -->
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+=======
+                    <!-- Toolbar links -->
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+>>>>>>> 863654ed65398a3dd52b69ccb41f6158c599899f
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
